@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E0C72F29-9977-4FF2-BED5-D862AF2B1B47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "etc", "etc", "{DB0D8A06-9FBD-414A-9FDA-B45B85A6B5CC}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.Infrastructure", "src\Acme.Infrastructure\Acme.Infrastructure.csproj", "{C80B0906-71D1-4178-9E56-CB0291E2FB99}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.DataContracts", "src\Acme.DataContracts\Acme.DataContracts.csproj", "{A5506EFD-D54F-4B6E-A84B-45435D7646DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.Core", "src\Acme.Core\Acme.Core.csproj", "{10A6CBCD-0484-4970-8DB1-FC90715016EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.Data", "src\Acme.Data\Acme.Data.csproj", "{3386ACA8-D149-4D8B-B933-37AA1C7DB2D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.Api", "src\Acme.Api\Acme.Api.csproj", "{855A470B-C78A-45FB-95B2-852491CA56D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C80B0906-71D1-4178-9E56-CB0291E2FB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80B0906-71D1-4178-9E56-CB0291E2FB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80B0906-71D1-4178-9E56-CB0291E2FB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80B0906-71D1-4178-9E56-CB0291E2FB99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5506EFD-D54F-4B6E-A84B-45435D7646DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5506EFD-D54F-4B6E-A84B-45435D7646DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5506EFD-D54F-4B6E-A84B-45435D7646DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5506EFD-D54F-4B6E-A84B-45435D7646DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10A6CBCD-0484-4970-8DB1-FC90715016EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A6CBCD-0484-4970-8DB1-FC90715016EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A6CBCD-0484-4970-8DB1-FC90715016EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A6CBCD-0484-4970-8DB1-FC90715016EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3386ACA8-D149-4D8B-B933-37AA1C7DB2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3386ACA8-D149-4D8B-B933-37AA1C7DB2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3386ACA8-D149-4D8B-B933-37AA1C7DB2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3386ACA8-D149-4D8B-B933-37AA1C7DB2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{855A470B-C78A-45FB-95B2-852491CA56D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855A470B-C78A-45FB-95B2-852491CA56D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855A470B-C78A-45FB-95B2-852491CA56D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855A470B-C78A-45FB-95B2-852491CA56D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C80B0906-71D1-4178-9E56-CB0291E2FB99} = {E0C72F29-9977-4FF2-BED5-D862AF2B1B47}
+		{A5506EFD-D54F-4B6E-A84B-45435D7646DA} = {E0C72F29-9977-4FF2-BED5-D862AF2B1B47}
+		{10A6CBCD-0484-4970-8DB1-FC90715016EE} = {E0C72F29-9977-4FF2-BED5-D862AF2B1B47}
+		{3386ACA8-D149-4D8B-B933-37AA1C7DB2D4} = {E0C72F29-9977-4FF2-BED5-D862AF2B1B47}
+		{855A470B-C78A-45FB-95B2-852491CA56D9} = {E0C72F29-9977-4FF2-BED5-D862AF2B1B47}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95371F01-7356-4CCD-BE32-ADCBED8E23FC}
+	EndGlobalSection
+EndGlobal

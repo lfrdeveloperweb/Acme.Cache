@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <!-- Product information -->
+    <Product>Acme.Cache</Product>
+    <AssemblyTitle>Acme.Cache</AssemblyTitle>
+    <VersionPrefix>0.0.1</VersionPrefix>
+
+    <!-- Setup initial variables if not defined. -->
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectRootDir Condition=" '$(ProjectRootDir)' == '' ">$(MSBuildThisFileDirectory)</ProjectRootDir>
+
+    <!-- Path definitions. -->
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)\build\tmp\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
+    <OutputPath>$(MSBuildThisFileDirectory)\build\bin\$(Configuration)\$(MSBuildProjectName)</OutputPath>
+
+    <!-- Variable and compile-time constant for the framework identifier. -->
+    <FrameworkIdentifier>$(TargetFramework.TrimEnd('.0123456789'))</FrameworkIdentifier>
+    <DefineConstants>$(DefineConstants);$(FrameworkIdentifier.ToUpper())</DefineConstants>
+  </PropertyGroup>
+</Project>
